@@ -48,7 +48,7 @@ public class MessageRetrievalHandler implements HttpHandler{
 }
 }
     private String restoreMessages(String queueName, String timestamp){
-        String brokerUrl = "tcp://localhost:61616";
+        String brokerUrl = "tcp://192.168.192.1:61616";
         ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(brokerUrl);
         Connection connection = null;
         Session session = null;

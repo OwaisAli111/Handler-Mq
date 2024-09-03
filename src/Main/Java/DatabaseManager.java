@@ -9,7 +9,7 @@ public class DatabaseManager {
     private static MongoCollection<org.bson.Document> collection;
 
     public static void initialize() {
-        MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+        MongoClient mongoClient = MongoClients.create("mongodb://mongodb:27017");
         MongoDatabase database = mongoClient.getDatabase("database_name");
         collection = database.getCollection("your_collection_name");
     }
